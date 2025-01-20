@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test3(failed)">
-    <classes>
-      <class name="com.DemoWebShop.TestScripts.InvalidLoginTest">
-        <methods>
-          <include name="toConnectDatabase"/>
-          <include name="toCloseServer"/>
-          <include name="setUp"/>
-          <include name="toConnectServer"/>
-          <include name="tearDown"/>
-          <include name="toCloseDatabase"/>
-          <include name="invalidLogin" invocation-numbers="0 1 2 3 4 5 6 7"/>
-        </methods>
-      </class> <!-- com.DemoWebShop.TestScripts.InvalidLoginTest -->
-    </classes>
-  </test> <!-- Test3(failed) -->
-  <test thread-count="5" parallel="tests" name="Test1(failed)">
-    <classes>
-      <class name="com.DemoWebShop.TestScripts.RegisterTest">
-        <methods>
-          <include name="toConnectDatabase"/>
-          <include name="toCloseServer"/>
-          <include name="setUp"/>
-          <include name="toConnectServer"/>
-          <include name="tearDown"/>
-          <include name="toRegisterIntoDemoWebShop"/>
-          <include name="toCloseDatabase"/>
-        </methods>
-      </class> <!-- com.DemoWebShop.TestScripts.RegisterTest -->
-    </classes>
-  </test> <!-- Test1(failed) -->
   <test thread-count="5" parallel="tests" name="Test2(failed)">
     <classes>
       <class name="com.DemoWebShop.TestScripts.LoginTest">
@@ -46,4 +16,34 @@
       </class> <!-- com.DemoWebShop.TestScripts.LoginTest -->
     </classes>
   </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="com.DemoWebShop.TestScripts.RegisterTest">
+        <methods>
+          <include name="toConnectDatabase"/>
+          <include name="toCloseServer"/>
+          <include name="setUp"/>
+          <include name="toConnectServer"/>
+          <include name="tearDown"/>
+          <include name="toRegisterIntoDemoWebShop"/>
+          <include name="toCloseDatabase"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.TestScripts.RegisterTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="com.DemoWebShop.TestScripts.InvalidLoginTest">
+        <methods>
+          <include name="toConnectDatabase"/>
+          <include name="toCloseServer"/>
+          <include name="setUp"/>
+          <include name="toConnectServer"/>
+          <include name="tearDown"/>
+          <include name="toCloseDatabase"/>
+          <include name="invalidLogin" invocation-numbers="0 1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.TestScripts.InvalidLoginTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

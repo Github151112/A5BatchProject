@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[==server connected successfully==]]>
@@ -8,31 +8,7 @@
       <![CDATA[==database connected sucessfully==]]>
     </line>
     <line>
-      <![CDATA[==database connected sucessfully==]]>
-    </line>
-    <line>
-      <![CDATA[==database connected sucessfully==]]>
-    </line>
-    <line>
       <![CDATA[****Launching chrome browser****]]>
-    </line>
-    <line>
-      <![CDATA[****Launching chrome browser****]]>
-    </line>
-    <line>
-      <![CDATA[****Launching chrome browser****]]>
-    </line>
-    <line>
-      <![CDATA[====Browser closed successfully====]]>
-    </line>
-    <line>
-      <![CDATA[==database closed sucessfully==]]>
-    </line>
-    <line>
-      <![CDATA[====Browser closed successfully====]]>
-    </line>
-    <line>
-      <![CDATA[==database closed sucessfully==]]>
     </line>
     <line>
       <![CDATA[====Browser closed successfully====]]>
@@ -44,254 +20,110 @@
       <![CDATA[==server closed sucessfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-16T11:10:58Z" name="Suite" finished-at="2025-01-16T11:11:26Z" duration-ms="28264">
+  <suite started-at="2025-01-20T10:20:06Z" name="Default suite" finished-at="2025-01-20T10:20:17Z" duration-ms="10919">
     <groups>
+      <group name="ST">
+        <method signature="LoginTest2.loginIntoDemoWeb()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" name="loginIntoDemoWeb" class="com.DemoWebShop.TestScripts.LoginTest2"/>
+      </group> <!-- ST -->
+      <group name="RT">
+        <method signature="LoginTest2.loginIntoDemoWeb()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" name="loginIntoDemoWeb" class="com.DemoWebShop.TestScripts.LoginTest2"/>
+      </group> <!-- RT -->
+      <group name="FT">
+        <method signature="LoginTest2.loginIntoDemoWeb()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" name="loginIntoDemoWeb" class="com.DemoWebShop.TestScripts.LoginTest2"/>
+      </group> <!-- FT -->
     </groups>
-    <test started-at="2025-01-16T11:10:58Z" name="Test2" finished-at="2025-01-16T11:11:16Z" duration-ms="18080">
-      <class name="com.DemoWebShop.TestScripts.LoginTest">
-        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest@4716be8b]" started-at="2025-01-16T11:10:58Z" name="toConnectDatabase" finished-at="2025-01-16T11:10:58Z" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[==database connected sucessfully==]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- toConnectDatabase -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest@4716be8b]" started-at="2025-01-16T11:10:58Z" name="setUp" finished-at="2025-01-16T11:11:09Z" duration-ms="10736" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[****Launching chrome browser****]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginIntoDemoWeb()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest@4716be8b]" started-at="2025-01-16T11:11:09Z" name="loginIntoDemoWeb" finished-at="2025-01-16T11:11:15Z" duration-ms="5801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginIntoDemoWeb -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest@4716be8b]" started-at="2025-01-16T11:11:15Z" name="tearDown" finished-at="2025-01-16T11:11:16Z" duration-ms="1502" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[====Browser closed successfully====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest@4716be8b]" started-at="2025-01-16T11:11:16Z" name="toCloseDatabase" finished-at="2025-01-16T11:11:16Z" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[==database closed sucessfully==]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- toCloseDatabase -->
-      </class> <!-- com.DemoWebShop.TestScripts.LoginTest -->
-    </test> <!-- Test2 -->
-    <test started-at="2025-01-16T11:10:58Z" name="Test1" finished-at="2025-01-16T11:11:19Z" duration-ms="20875">
-      <class name="com.DemoWebShop.TestScripts.RegisterTest">
-        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.RegisterTest@3f91b517]" started-at="2025-01-16T11:10:58Z" name="toConnectDatabase" finished-at="2025-01-16T11:10:58Z" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[==database connected sucessfully==]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- toConnectDatabase -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DemoWebShop.TestScripts.RegisterTest@3f91b517]" started-at="2025-01-16T11:10:58Z" name="setUp" finished-at="2025-01-16T11:11:09Z" duration-ms="10539" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[****Launching chrome browser****]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="toRegisterIntoDemoWebShop()[pri:0, instance:com.DemoWebShop.TestScripts.RegisterTest@3f91b517]" started-at="2025-01-16T11:11:09Z" name="toRegisterIntoDemoWebShop" description="verify the user is able to register or not" finished-at="2025-01-16T11:11:17Z" duration-ms="7758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toRegisterIntoDemoWebShop -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DemoWebShop.TestScripts.RegisterTest@3f91b517]" started-at="2025-01-16T11:11:17Z" name="tearDown" finished-at="2025-01-16T11:11:19Z" duration-ms="2451" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[====Browser closed successfully====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.RegisterTest@3f91b517]" started-at="2025-01-16T11:11:19Z" name="toCloseDatabase" finished-at="2025-01-16T11:11:19Z" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[==database closed sucessfully==]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- toCloseDatabase -->
-      </class> <!-- com.DemoWebShop.TestScripts.RegisterTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2025-01-16T11:10:58Z" name="Test3" finished-at="2025-01-16T11:11:26Z" duration-ms="28264">
-      <class name="com.DemoWebShop.TestScripts.InvalidLoginTest">
-        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:10:58Z" name="toConnectServer" finished-at="2025-01-16T11:10:58Z" duration-ms="30" status="PASS">
+    <test started-at="2025-01-20T10:20:06Z" name="Default test" finished-at="2025-01-20T10:20:17Z" duration-ms="10919">
+      <class name="com.DemoWebShop.TestScripts.LoginTest2">
+        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:06Z" name="toConnectServer" finished-at="2025-01-20T10:20:06Z" duration-ms="22" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==server connected successfully==]]>
             </line>
           </reporter-output>
         </test-method> <!-- toConnectServer -->
-        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:10:58Z" name="toConnectDatabase" finished-at="2025-01-16T11:10:58Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:06Z" name="toConnectDatabase" finished-at="2025-01-20T10:20:06Z" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==database connected sucessfully==]]>
             </line>
           </reporter-output>
         </test-method> <!-- toConnectDatabase -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:10:58Z" name="setUp" finished-at="2025-01-16T11:11:08Z" duration-ms="9704" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:06Z" name="setUp" finished-at="2025-01-20T10:20:13Z" duration-ms="7326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[****Launching chrome browser****]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:10Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:14Z" duration-ms="3432" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manager1]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginIntoDemoWeb()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:13Z" name="loginIntoDemoWeb" finished-at="2025-01-20T10:20:17Z" duration-ms="3195" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Demo Web Sho] but found [Demo Web Shop]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Demo Web Sho] but found [Demo Web Shop]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.DemoWebShop.TestScripts.LoginTest2.loginIntoDemoWeb(LoginTest2.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:14Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:17Z" duration-ms="2977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manager2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:17Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:19Z" duration-ms="1993" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin32]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manager3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:19Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:20Z" duration-ms="1505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin55]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manager55]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:20Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:22Z" duration-ms="1591" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin545]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manager588]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:22Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:23Z" duration-ms="1280" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[dmin5858]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[manah655]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:23Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:25Z" duration-ms="1333" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[dnd656521]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jcbdjfjen]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:25Z" name="invalidLogin" data-provider="invalidData" finished-at="2025-01-16T11:11:26Z" duration-ms="1373" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sjusdfh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jds]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:26Z" name="tearDown" finished-at="2025-01-16T11:11:26Z" duration-ms="469" status="PASS">
+        </test-method> <!-- loginIntoDemoWeb -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:17Z" name="tearDown" finished-at="2025-01-20T10:20:17Z" duration-ms="355" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed successfully====]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:26Z" name="toCloseDatabase" finished-at="2025-01-16T11:11:26Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:17Z" name="toCloseDatabase" finished-at="2025-01-20T10:20:17Z" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==database closed sucessfully==]]>
             </line>
           </reporter-output>
         </test-method> <!-- toCloseDatabase -->
-        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.DemoWebShop.TestScripts.InvalidLoginTest@7a362b6b]" started-at="2025-01-16T11:11:26Z" name="toCloseServer" finished-at="2025-01-16T11:11:26Z" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.DemoWebShop.TestScripts.LoginTest2@4f3bbf68]" started-at="2025-01-20T10:20:17Z" name="toCloseServer" finished-at="2025-01-20T10:20:17Z" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==server closed sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- toCloseServer -->
-      </class> <!-- com.DemoWebShop.TestScripts.InvalidLoginTest -->
-    </test> <!-- Test3 -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.DemoWebShop.TestScripts.LoginTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

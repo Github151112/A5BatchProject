@@ -13,27 +13,31 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class BaseTest implements IAutoConstant {
 
-	public WebDriver driver;
+	public static WebDriver sdriver;
+	public  WebDriver driver;
 	public FileUtility fl = new FileUtility();
 	public DataUtility d = new DataUtility();
 	public ExcelUtility ex = new ExcelUtility();
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void toConnectServer() {
 		Reporter.log("==server connected successfully==",true);
 	}
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void toConnectDatabase() {
 		Reporter.log("==database connected sucessfully==",true);
 	}
 
-	@BeforeClass
-	public void setUp() throws IOException {
-		String browser = fl.getDataFromProperty(PROP_PATH, "browser");
+	@Parameters("browser")
+	@BeforeClass(alwaysRun = true)
+	public void setUp(@Optional("chrome") String browser) throws IOException {
+		//String browser = fl.getDataFromProperty(PROP_PATH, "browser");
 		String url = fl.getDataFromProperty(PROP_PATH, "url");
 		Reporter.log("****Launching " + browser + " browser****", true);
 		if (browser.equalsIgnoreCase("chrome"))
@@ -44,23 +48,24 @@ public class BaseTest implements IAutoConstant {
 			driver = new EdgeDriver();
 		else
 			Reporter.log("Invalid browser", true);
+		sdriver = driver;
 		d.maximizeWindow(driver);
 		d.implicitWait(driver, TIMESECONDS);
 		d.toLaunchApplication(driver, url);
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		Reporter.log("====Browser closed successfully====", true);
 		driver.quit();
 	}
 
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void toCloseDatabase() {
 		Reporter.log("==database closed sucessfully==", true);
 	}
 
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void toCloseServer() {
 		Reporter.log("==server closed sucessfully", true);
 	}

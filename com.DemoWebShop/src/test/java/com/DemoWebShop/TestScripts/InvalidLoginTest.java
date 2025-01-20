@@ -18,7 +18,7 @@ public class InvalidLoginTest extends BaseTest {
 		return ex.getMultipleData(EXCEL_PATH, INVALIDSHEET);
 	}
 	
-	@Test(dataProvider = "invalidData")
+	@Test(dataProvider = "invalidData",groups = {"RT","ST","IT","FT"})
 	public void invalidLogin(String username,String password)
 	{
 		WelcomePage wp = new WelcomePage(driver);
